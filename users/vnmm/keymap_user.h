@@ -17,7 +17,7 @@
 #pragma once
 
 #ifdef DYNAMIC_KEYMAP_LAYER_COUNT
-#undef DYNAMIC_KEYMAP_LAYER_COUNT
+#    undef DYNAMIC_KEYMAP_LAYER_COUNT
 #endif
 #define DYNAMIC_KEYMAP_LAYER_COUNT 5
 
@@ -39,3 +39,9 @@ enum layers {
 };
 
 // clang-format on
+
+bool    pairing;
+uint8_t current_profile_indicator;
+bool    power_above_70;
+bool    power_between_30_70;
+bool    power_below_30;
